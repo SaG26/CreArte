@@ -66,6 +66,20 @@ body {
     margin-right: 30px;
 }
 
+/* BOTONES */
+
+
+.navbar a{
+    margin-right: 15px;
+    transition: 0.5s;
+    border-bottom: 1px solid #0A1847;
+}
+.navbar a:hover{
+    border-bottom: 1px solid white;
+    transition: 0.5s;
+}
+
+
 /* CONTENIDO */
 
 .inicio{
@@ -107,18 +121,6 @@ body {
     font-weight: 800;
     margin-bottom: 35px;
     text-transform: uppercase;
-}
-
-/* BOTONES */
-
-.navbar a{
-    margin-right: 15px;
-    transition: 0.5s;
-    border-bottom: 1px solid #0A1847;
-}
-.navbar a:hover{
-    border-bottom: 1px solid white;
-    transition: 0.5s;
 }
 
 /*SLIDER*/
@@ -264,7 +266,8 @@ body {
         margin-right: 5px;
       }
 }
-@media(max-width: 700px){
+
+@media(max-width: 800px){
     .menu{
         padding: 15px;
     }
@@ -305,6 +308,17 @@ body {
     #menu:checked ~ .navbar{
         display: initial;
     }
+    .menu-icono{
+        margin-right: 35px;
+    }
+    .navbar{
+        margin-right: 0;
+    }
+    .navbar a{
+        margin-right: 0;
+    }
+
+/* INICIO RESPONSIVE*/
     .imagen{
         padding: 60px;
         position: static;
@@ -313,18 +327,12 @@ body {
     .imagen img{
         width: 220px;
     }
-    .menu-icono{
-        margin-right: 35px;
-    }
     .imagen p{
         margin-top: 25px;
         font-size: 10px;
         color: #2C2C2C;
         font-weight: 800;
         text-transform: uppercase;
-    }
-    .navbar{
-        margin-right: 0;
     }
     .logos {
         overflow: hidden;
